@@ -1,0 +1,5 @@
+name: 'dmpa_subnational_migration'
+type: module
+description: 'Migrates country sub-national levels from csv file'
+core: 8.x
+package: 'dmpa'

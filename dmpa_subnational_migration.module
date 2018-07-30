@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains dmpa_subnational_migration.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dmpa_subnational_migration_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dmpa_subnational_migration module.
+    case 'help.page.dmpa_subnational_migration':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Migrates country sub-national levels from csv file') . '</p>';
+      return $output;
+
+    default:
+  }
+}
